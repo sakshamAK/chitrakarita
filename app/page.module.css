@@ -1,0 +1,38 @@
+.gridarea {
+    grid-template-rows: 2rem repeat(6, 1fr) 2rem;
+    grid-template-areas:
+        ". . . . . . . ."
+        ". preview preview preview settings settings settings ."
+        ". preview preview preview settings settings settings ."
+        ". preview preview preview settings settings settings ."
+        ". preview preview preview settings settings settings ."
+        ". preview preview preview settings settings settings ."
+        ". preview preview preview settings settings settings ."
+        ". . . . . . . ."
+    ;
+}
+
+.preview {
+    grid-area: preview;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.thumb-custom::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('../public/contrastSlider.png') center no-repeat;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+}
+
+.thumb-brightness::-webkit-slider-thumb {
+    background: url('../public/brightnessSlider.png') center no-repeat;;
+}
+
+.thumb-temp::-webkit-slider-thumb {
+    background: url('../public/tempSlider.png') center no-repeat;;
+}
