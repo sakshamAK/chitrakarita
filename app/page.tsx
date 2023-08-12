@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div className={`grid grid-cols-8 grid-rows-6 h-screen place-items-center ${style.gridarea} bg-${theme}`}>
       <div className={`${style.preview} flex flex-col justify-center gap-4 items-center p-5 h-full w-4/5`}>
-        <div className={`p-5 rounded-2xl bg-sec-${theme}`}>
+        <div className={`p-5 rounded-2xl bg-sec-light`}>
           <img src="https://picsum.photos/800/800" className="w-full shadow-md rounded-xl" />
         </div>
       </div>
